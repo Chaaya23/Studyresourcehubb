@@ -1,0 +1,42 @@
+{
+  "dbms": [
+    {
+      "title": "DBMS Notes (GeeksforGeeks)",
+      "link": "https://www.geeksforgeeks.org/dbms/"
+    },
+    {
+      "title": "DBMS Full Playlist",
+      "link": "https://www.youtube.com/results?search_query=dbms+playlist"
+    }
+  ],
+  "os": [
+    {
+      "title": "Operating System Notes",
+      "link": "https://www.geeksforgeeks.org/operating-systems/"
+    },
+    {
+      "title": "OS YouTube Playlist",
+      "link": "https://www.youtube.com/results?search_query=operating+system+playlist"
+    }
+  ],
+  "cn": [
+    {
+      "title": "Computer Networks Notes",
+      "link": "https://www.geeksforgeeks.org/computer-network-tutorials/"
+    },
+    {
+      "title": "CN YouTube Playlist",
+      "link": "https://www.youtube.com/results?search_query=computer+networks+playlist"
+    }
+  ],
+  "dsa": [
+    {
+      "title": "DSA Complete Guide",
+      "link": "https://www.geeksforgeeks.org/data-structures/"
+    },
+    {
+      "title": "DSA YouTube Playlist",
+      "link": "https://www.youtube.com/results?search_query=data+structures+and+algorithms+playlist"
+    }
+  ]
+}

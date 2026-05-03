@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase Auth Guard -->
+    <script type="module">
+        import { auth, onAuthStateChanged } from "./firebase.js";
+
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                window.location.href = "login.html";
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+    <div class="sidebar">
+        <h2>📚 Study Hub</h2>
+
+        <a href="index.html">🏠 Home</a>
+        <a href="subject.html?subject=dbms">📘 DBMS</a>
+        <a href="subject.html?subject=os">💻 OS</a>
+        <a href="subject.html?subject=cn">🌐 CN</a>
+        <a href="subject.html?subject=dsa">🧠 DSA</a>
+
+        <hr style="opacity:0.2;">
+
+        <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <div class="main">
+
+        <header class="header">
+            <h1>Welcome to Study Resource Hub 📚</h1>
+        </header>
+
+        <!-- SUBJECT CARDS -->
+        <div class="subject-grid">
+
+            <a href="subject.html?subject=dbms" class="card">DBMS</a>
+<a href="subject.html?subject=os" class="card">OS</a>
+<a href="subject.html?subject=cn" class="card">CN</a>
+<a href="subject.html?subject=dsa" class="card">DSA</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= FIREBASE LOGOUT ================= -->
+<script type="module">
+    import { auth, signOut } from "./firebase.js";
+
+    window.logout = function () {
+        signOut(auth).then(() => {
+            window.location.href = "login.html";
+        });
+    };
+</script>
+
+</body>
+</html>
